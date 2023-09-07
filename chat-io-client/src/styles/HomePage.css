@@ -1,0 +1,407 @@
+#logo {
+  text-align: center;
+  padding-top: clamp(0px, 1vw, 100px);
+  font-size: 4em;
+  margin-bottom: clamp(0px, 2vw, 100px);
+  color: #ff49f6;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#container {
+  background-color: rgba(255, 255, 255, 0.072);
+  /* width: clamp(250px, 24vw, 400px); */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 8px solid #b3b3b35c; */
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0px 0px 15px 0px rgba(186, 186, 186, 0.281);
+}
+
+#usernameInput {
+  padding: .3em;
+  height: auto;
+  width: 9em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: white;
+  border: 0px solid rgb(123, 123, 123);
+  border-radius: .6em 0px 0px .6em;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgba(186, 186, 186, 0.281);
+}
+
+#roomInput {
+
+  padding: .3em;
+  height: auto;
+  width: 5em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: white;
+  border: 0px solid rgb(123, 123, 123);
+  border-radius: .6em 0px 0px .6em;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgba(186, 186, 186, 0.281);
+}
+
+.inputBox::placeholder {
+  color: rgba(255, 255, 255, 0.451)
+}
+
+.inputBox:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 10px 0px rgba(224, 224, 224, 0.677) !important;
+}
+
+.button1 {
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 203, 254);
+  width: min-content;
+  /* white-space: nowrap; */
+  height: auto;
+  padding: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  border: .12em solid rgb(240, 108, 255);
+  border-radius: 0px .6em .6em 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button2 {
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 203, 254);
+  width: min-content;
+  white-space: nowrap;
+  height: auto;
+  padding: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  border: .12em solid rgb(242, 121, 255);
+  border-radius: 0px .6em .6em 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button2:hover,
+.button1:hover {
+  animation: flicker2 8s ease-in-out infinite;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes flicker2 {
+  0% {
+    box-shadow: inset 0px 0px 20px 5px rgb(250, 104, 255),
+      0px 0px 20px 5px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+  }
+
+  8% {
+    box-shadow: inset 0px 0px 20px 5px rgb(250, 104, 255),
+      0px 0px 20px 5px rgb(250, 104, 255);
+  }
+
+  15% {
+    box-shadow: inset 0px 0px 20px 1px rgb(250, 104, 255),
+      0px 0px 20px 1px rgb(250, 104, 255);
+  }
+
+  19% {
+    box-shadow: inset 0px 0px 20px 6px rgb(250, 104, 255),
+      0px 0px 20px 6px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  20% {
+    /* lower 1 */
+    box-shadow: inset 0px 0px 15px 0px rgba(250, 104, 255, 0.761),
+      0px 0px 15px 0px rgba(250, 104, 255, 0.806);
+    border-color: rgb(144, 105, 150);
+    color: rgb(134, 126, 151);
+  }
+
+  21% {
+    box-shadow: inset 0px 0px 20px 6px rgb(250, 104, 255),
+      0px 0px 20px 6px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  22% {
+    box-shadow: inset 0px 0px 15px 0px rgba(250, 104, 255, 0.574),
+      0px 0px 15px 0px rgba(250, 104, 255, 0.568);
+    border-color: rgb(144, 105, 150);
+    color: rgb(134, 126, 151);
+  }
+
+  24% {
+    /* raise 1 */
+    box-shadow: inset 0px 0px 20px 3px rgb(250, 104, 255),
+      0px 0px 20px 3px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+    color: rgb(235, 226, 255);
+
+  }
+
+  36% {
+    box-shadow: inset 0px 0px 20px 6px rgb(250, 104, 255),
+      0px 0px 20px 6px rgb(250, 104, 255);
+  }
+
+  50% {
+    box-shadow: inset 0px 0px 20px 3px rgb(250, 104, 255),
+      0px 0px 20px 3px rgb(250, 104, 255);
+  }
+
+  60% {
+    box-shadow: inset 0px 0px 20px 5px rgb(250, 104, 255),
+      0px 0px 20px 5px rgb(250, 104, 255);
+  }
+
+  69% {
+    box-shadow: inset 0px 0px 20px 7px rgb(250, 104, 255),
+      0px 0px 20px 7px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  70% {
+    /* lower 2 */
+    box-shadow: inset 0px 0px 15px 0px rgba(250, 104, 255, 0.509),
+      0px 0px 15px 0px rgba(250, 104, 255, 0.487);
+    border-color: rgb(144, 105, 150);
+    color: rgb(134, 126, 151);
+  }
+
+  72% {
+    /* raise 2 */
+    box-shadow: inset 0px 0px 20px 7px rgb(250, 104, 255),
+      0px 0px 20px 7px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  80% {
+    box-shadow: inset 0px 0px 20px 4px rgb(250, 104, 255),
+      0px 0px 20px 4px rgb(250, 104, 255);
+  }
+
+  95% {
+    box-shadow: inset 0px 0px 20px 6px rgb(250, 104, 255),
+      0px 0px 20px 6px rgb(250, 104, 255);
+  }
+
+  100% {
+    box-shadow: inset 0px 0px 20px 5px rgb(250, 104, 255),
+      0px 0px 20px 5px rgb(250, 104, 255);
+    border-color: rgb(246, 180, 255);
+  }
+}
+
+
+
+
+
+
+
+@keyframes flicker {
+  0% {
+    box-shadow: inset 0px 0px 20px 5px rgb(78, 55, 255),
+      0px 0px 20px 5px rgb(78, 55, 255);
+  }
+
+  8% {
+    box-shadow: inset 0px 0px 20px 5px rgb(78, 55, 255),
+      0px 0px 20px 5px rgb(78, 55, 255);
+  }
+
+  15% {
+    box-shadow: inset 0px 0px 20px 1px rgb(78, 55, 255),
+      0px 0px 20px 1px rgb(78, 55, 255);
+  }
+
+  19% {
+    box-shadow: inset 0px 0px 20px 6px rgb(78, 55, 255),
+      0px 0px 20px 6px rgb(78, 55, 255);
+    border-color: rgb(154, 140, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  20% {
+    /* lower 1 */
+    box-shadow: inset 0px 0px 15px 0px rgba(78, 55, 255, 0.761),
+      0px 0px 15px 0px rgba(78, 55, 255, 0.806);
+    border-color: rgb(69, 63, 113);
+    color: rgb(134, 126, 151);
+  }
+
+  21% {
+    box-shadow: inset 0px 0px 20px 6px rgb(78, 55, 255),
+      0px 0px 20px 6px rgb(78, 55, 255);
+    border-color: rgb(154, 140, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  22% {
+    box-shadow: inset 0px 0px 15px 0px rgba(78, 55, 255, 0.574),
+      0px 0px 15px 0px rgba(78, 55, 255, 0.568);
+    border-color: rgb(69, 63, 113);
+    color: rgb(134, 126, 151);
+  }
+
+  24% {
+    /* raise 1 */
+    box-shadow: inset 0px 0px 20px 3px rgb(78, 55, 255),
+      0px 0px 20px 3px rgb(78, 55, 255);
+    border-color: rgb(177, 167, 255);
+    color: rgb(235, 226, 255);
+
+  }
+
+  36% {
+    box-shadow: inset 0px 0px 20px 6px rgb(78, 55, 255),
+      0px 0px 20px 6px rgb(78, 55, 255);
+  }
+
+  50% {
+    box-shadow: inset 0px 0px 20px 3px rgb(78, 55, 255),
+      0px 0px 20px 3px rgb(78, 55, 255);
+  }
+
+  60% {
+    box-shadow: inset 0px 0px 20px 5px rgb(78, 55, 255),
+      0px 0px 20px 5px rgb(78, 55, 255);
+  }
+
+  69% {
+    box-shadow: inset 0px 0px 20px 7px rgb(78, 55, 255),
+      0px 0px 20px 7px rgb(78, 55, 255);
+    border-color: rgb(177, 167, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  70% {
+    /* lower 2 */
+    box-shadow: inset 0px 0px 15px 0px rgba(78, 55, 255, 0.509),
+      0px 0px 15px 0px rgba(78, 55, 255, 0.487);
+    border-color: rgb(69, 63, 113);
+    color: rgb(134, 126, 151);
+  }
+
+  72% {
+    /* raise 2 */
+    box-shadow: inset 0px 0px 20px 7px rgb(78, 55, 255),
+      0px 0px 20px 7px rgb(78, 55, 255);
+    border-color: rgb(154, 140, 255);
+    color: rgb(235, 226, 255);
+  }
+
+  80% {
+    box-shadow: inset 0px 0px 20px 4px rgb(78, 55, 255),
+      0px 0px 20px 4px rgb(78, 55, 255);
+  }
+
+  95% {
+    box-shadow: inset 0px 0px 20px 6px rgb(78, 55, 255),
+      0px 0px 20px 6px rgb(78, 55, 255);
+  }
+
+  100% {
+    box-shadow: inset 0px 0px 20px 5px rgb(78, 55, 255),
+      0px 0px 20px 5px rgb(78, 55, 255);
+  }
+}
+
+
+.otherButton:hover {
+  animation: flicker 8s ease-in-out infinite;
+  color: rgb(255, 255, 255);
+  /* box-shadow: inset 0px 0px 20px 5px rgba(247, 27, 255, 0.485),
+    0px 0px 20px 5px rgba(247, 27, 255, 0.615); */
+  /* border: .12em solid rgb(246, 180, 255); */
+
+}
+
+/* .button2:active {
+  color: rgb(255, 219, 254);
+  box-shadow: inset 0px 0px 20px 0px rgb(247, 27, 255),
+    0px 0px 20px 0px rgb(247, 27, 255);
+} */
+
+.otherButton {
+  cursor: pointer;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgb(235, 226, 255);
+  width: min-content;
+  white-space: nowrap;
+  height: auto;
+  padding: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  border: .12em solid rgb(154, 140, 255);
+  border-radius: .6em;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgb(78, 55, 255),
+    0px 0px 15px 0px rgb(78, 55, 255);
+}
+
+.otherButton:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 20px 5px rgb(78, 55, 255),
+    0px 0px 20px 5px rgb(78, 55, 255);
+  border: .12em solid rgb(205, 198, 255);
+}
+
+hr {
+  display: block;
+  margin-top: .75em;
+  margin-bottom: .75em;
+  width: 75%;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border: .07em solid rgba(255, 255, 255, 0.164);
+  border-radius: .1em;
+}
+
+#playersOnline {
+  margin-bottom: .5em;
+}
+
+#finding-room {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 25vh;
+  padding-bottom: .5em;
+}
+
+/* #joinRoomForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */

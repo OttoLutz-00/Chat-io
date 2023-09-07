@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.0;
+  font-weight: 350;
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #171c2b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.spacer {
+  aspect-ratio: 900/600;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('./waves.svg');
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  color: rgb(255, 203, 254);
+  width: min-content;
+  white-space: nowrap;
+  height: auto;
+  padding: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  border: .12em solid rgb(242, 121, 255);
+  border-radius: .6em .6em .6em .6em;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+input {
+  outline: none;
+}

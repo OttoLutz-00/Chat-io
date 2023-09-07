@@ -1,0 +1,210 @@
+#create-room-form {
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid white; */
+  /* width: clamp(250px, 40vw, 800px); */
+  margin-top: 3vw;
+  padding: 1rem;
+  height: min-content;
+  display: block;
+}
+
+#slider-label {
+  display: inline;
+  width: 2em;
+  text-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
+  /* height: 5em; */
+}
+
+#slider {
+  -webkit-appearance: none;
+  display: inline-block;
+  margin: auto 0em auto 2em;
+  width: 20em;
+  height: clamp(5px, .6vw, 15px);
+  border-radius: 100px;
+  background: rgba(213, 213, 213, 0.38);
+}
+
+
+#profanityBox {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgba(255, 255, 255, 0.235);
+  -webkit-appearance: none;
+  border-radius: 25%;
+  margin-right: 2em;
+  width: clamp(25px, 3vw, 40px);
+  height: clamp(25px, 3vw, 40px);
+}
+
+#profanityBox:checked {
+  border: .3em solid rgb(243, 131, 255);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+}
+
+#profanityBox:active {
+  opacity: 70%;
+}
+
+#profanityBox:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.146);
+}
+
+#privateBox {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2em;
+  background-color: rgba(255, 255, 255, 0.235);
+  -webkit-appearance: none;
+  border-radius: 25%;
+  width: clamp(25px, 3vw, 40px);
+  height: clamp(25px, 3vw, 40px);
+}
+
+#privateBox:active {
+  opacity: 70%;
+}
+
+#privateBox:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.146);
+}
+
+#privateBox:checked {
+  border: .3em solid rgb(243, 131, 255);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+}
+
+#profanityContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#privateContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: clamp(25px, 2vw, 40px);
+  height: clamp(25px, 2vw, 40px);
+  background: rgb(127, 127, 127);
+  border: .3em solid rgb(243, 131, 255);
+  cursor: pointer;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+}
+
+#slider::-webkit-slider-thumb:hover:active {
+  border: .3em solid rgba(243, 131, 255, 0.666);
+}
+
+#slider::-webkit-slider-thumb:hover {
+  box-shadow: inset 0px 0px 20px 0px rgb(247, 27, 255),
+    0px 0px 20px 0px rgb(247, 27, 255);
+  border: .3em solid rgb(245, 159, 255);
+}
+
+#room-size-input-container {
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  height: clamp(25px, 3vw, 40px);
+}
+
+#players {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.big-message {
+  margin-top: 0;
+  padding: .5em;
+}
+
+#splitter {
+  margin: auto;
+}
+
+.containerrr {
+  /* font-size: clamp(.5rem, 1.7vw, 3.5rem); */
+  /* min-width: 100px; */
+  background-color: rgba(255, 255, 255, 0.072);
+  width: clamp(250px, 25vw, 400px);
+  /* width: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0px 0px 15px 0px rgba(186, 186, 186, 0.281);
+}
+
+.labelCenter {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.line {
+  width: 95%;
+  border: 2px solid rgba(248, 176, 255, 0.264);
+  margin-top: .7em;
+  margin-bottom: .7em;
+}
+
+#create-room-button {
+  display: block;
+  cursor: pointer;
+  color: rgb(255, 213, 254);
+  width: auto;
+  white-space: nowrap;
+  height: auto;
+  padding: .2em;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: clamp(1rem, 2vw, 3.5rem);
+  border: .12em solid rgb(243, 131, 255);
+  border-radius: .6em .6em .6em .6em;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#create-room-button:hover {
+  animation: flicker2 8s ease-in-out infinite;
+}
+
+#form {
+  margin-top: 2em;
+}
+
+.big-room-message {
+  font-size: clamp(1rem, 3vw, 3.5rem);
+  text-align: center;
+  margin-bottom: .5em;
+  /* padding-top: 1em; */
+}
+
+#top-hr {
+  margin: 0;
+  padding-top: 1em;
+  border: 0;
+  height: 4em;
+}

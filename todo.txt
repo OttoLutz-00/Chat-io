@@ -1,0 +1,61 @@
+TODO:
+  - loading elements animation when refresh button is hit on /browse-rooms
+  - chat.io large logo on all menu type pages
+  - chat.io small logo in corner of all other screens (needs to be on every screen)
+  - make chat.io logo a link to homepage
+  - create room page form values actually sent to server (private & profanity options)
+  - better hover effect for buttons
+  - text labels for buttons when hovered over
+  - name character validation 
+
+MAYBE TODO:
+  - different wavy background image
+  - admin(or maybe main menu) type dashboard where you can see a graph of (time, playersOnline), peak players today, total players
+
+
+
+
+NEWEST:
+  
+
+  - add way to kick players as the host. Might want a 'manage room' button that can be clicked to bring up a menu that lists all players
+    along with an option to promote them to host or kick them from the lobby
+    need more code to prevent a kicked player from joining the same lobby again.
+    (need extra list for kicked players stored in server that is checked.) Also need to store and load user id localStorage 
+    so a kicked user is still uniquely identifiable as the same person after being kicked. YES the user will be able to modify 
+    their user id manually in local storage, but the common person would not think to do that. As this app doesnt have user accounts stored in a db, 
+    the browser is the best way to 'remember' user data via localstorage
+
+  - add chat message for kicked players.
+
+  - profanity filter on messages
+
+  - add chat GPT prompter with Q and A displayed in chat.
+
+
+DONE:
+  - add a typing animation when another user is typing.
+
+  - if user is not scrolled to the bottom, notify them when a new message is received.
+    May have to rework code to use 'onScroll' event since the 'new messages' button should also 
+    be able to disappear by simply scrolling to the bottom and not clicking the 'new messages' button.
+  
+  - fix problem where user leaves room while typing a message and will be left as still 'typing' in that lobby.
+
+  - add chat message for new players and players leaving.
+
+  - unique icon for room host in players list
+
+
+
+
+
+
+private room  []
+
+profanity filter []
+
+- NAME | KICK | MAKE HOST
+- NAME | KICK | MAKE HOST
+- NAME | KICK | MAKE HOST
+- NAME | KICK | MAKE HOST

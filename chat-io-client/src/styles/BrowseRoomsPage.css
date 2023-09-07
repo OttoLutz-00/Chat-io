@@ -1,0 +1,215 @@
+.room {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  /* padding: .3em; */
+  height: 2em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: white;
+  border: 0px solid rgb(123, 123, 123);
+  border-radius: .6em .6em .6em .6em;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgba(186, 186, 186, 0.281);
+  align-items: center;
+}
+
+.vl {
+  height: 1.7em;
+  border: 1px solid rgba(255, 255, 255, 0.101);
+  border-radius: 1em;
+}
+
+.button {
+  cursor: pointer;
+  color: rgb(255, 203, 254);
+  width: 3em;
+  white-space: nowrap;
+  height: 100%;
+  padding: .2em;
+  font-size: clamp(.8rem, 2vw, .5rem);
+  border: .12em solid rgb(242, 121, 255);
+  border-radius: 0px .6em .6em 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 15px 0px rgb(247, 27, 255),
+    0px 0px 15px 0px rgb(247, 27, 255);
+}
+
+.button:hover {
+  animation: flicker2 8s ease-in-out infinite;
+}
+
+.playerCount {
+  font-family: "Roboto Mono";
+  width: 3em;
+  padding-right: auto;
+  padding-left: auto;
+  text-align: center;
+  font-weight: 900;
+}
+
+#refresh-icon {
+  opacity: 70%;
+  display: inline;
+  height: clamp(20px, 2.5vw, 30px);
+  width: clamp(20px, 2.5vw, 30px);
+}
+
+#refresh-icon:hover {
+  opacity: 40%;
+}
+
+.animate {
+  transform-origin: 53.5% 50%;
+  /* transform-origin: calc(52%) 15px; */
+  animation: spin 1.5s infinite;
+}
+
+@keyframes spin {
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+#topBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#refresh-button {
+  /* display: inline; */
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  width: min-content;
+  height: clamp(20px, 3vw, 70px);
+  padding: 0;
+  margin-left: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: none;
+  /* margin-left: auto; */
+}
+
+#refresh-button:hover {
+  cursor: pointer;
+}
+
+
+.name {
+  padding-left: .5em;
+  display: flex;
+  font-family: "Roboto Mono";
+  color: rgb(240, 240, 240);
+  white-space: nowrap;
+  /* max-width: 15ch; */
+}
+
+.sroom {
+  display: inline;
+  color: rgba(245, 245, 245, 0.664);
+  white-space: nowrap;
+  padding-right: 1em;
+}
+
+.nameContainer {
+  width: auto;
+  display: flex;
+  margin-right: auto;
+  /* justify-content: left; */
+}
+
+.dot1 {
+  display: inline;
+  color: rgba(240, 240, 240, 0.925);
+  width: .3em;
+}
+
+.dot2 {
+  display: inline;
+  color: rgba(245, 245, 245, 0.770);
+  width: .3em;
+}
+
+.dot3 {
+  display: inline;
+  color: rgba(245, 245, 245, 0.665);
+  width: .3em;
+  padding-right: .2em;
+}
+
+#container {
+  padding-top: .7em;
+  padding-bottom: .7em;
+  backdrop-filter: blur(10px);
+}
+
+#players-online {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+
+
+.loading-room {
+  color: rgba(21, 119, 205, 0) !important;
+  user-select: none;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0),
+      rgba(249, 162, 255, 0.254) 10%,
+      rgba(240, 32, 255, 0.0) 45%);
+  animation: loadingGradient2 1.5s linear infinite;
+  background-size: 200% auto;
+}
+
+.loading {
+  color: rgba(255, 255, 255, 0);
+  user-select: none;
+  /* border: solid rgb(255, 0, 0); */
+}
+
+.loading:hover {
+  cursor: default;
+}
+
+.loading-vl {
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+@keyframes loadingGradient {
+  0% {
+    background-position: 0%;
+  }
+
+  25% {
+    background-position: 40%;
+  }
+
+  50% {
+    background-position: 90%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+@keyframes loadingGradient2 {
+  0% {
+    background-position: 100%;
+  }
+
+  /* 25% {
+    background-position: 40%;
+  }
+
+  50% {
+    background-position: 90%;
+  } */
+
+  100% {
+    background-position: 300%;
+  }
+}
